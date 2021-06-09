@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Rollbar from 'rollbar'
 
 const rollbarSingleton = new Rollbar({
-  accessToken: process.env.NEXT_PUBLIC_ROLLBAR_ACCESS_TOKEN,
+  accessToken: process.env.NEXT_PUBLIC_ROLLBAR_CLIENT_ACCESS_TOKEN,
   environment: process.env.NEXT_PUBLIC_ROLLBAR_ENVIRONMENT,
   payload: {
     client: {
