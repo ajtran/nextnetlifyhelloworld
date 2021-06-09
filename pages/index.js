@@ -15,11 +15,24 @@ const rollbarSingleton = new Rollbar({
   captureUnhandledRejections: true,
 })
 
+function throwError() {
+  rollbarSingleton.log('clicked')
+  try {
+    const tomato = banana.split()
+  } catch (e) {
+    rollbarSingleton.error(e)
+  }
+}
+
 export default function IndexPage() {
-  rollbarSingleton.info('from anthony\'s nextjs app')
   return (
     <div>
-      index page
+      <h1>
+        index page
+      </h1>
+      <div onClick={throwError}>
+        click me for an error
+      </div>
     </div>
   )
 }
