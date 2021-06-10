@@ -5,6 +5,6 @@
   rollbar-cli upload-sourcemaps ./out \
     --access-token $ROLLBAR_SERVER_ACCESS_TOKEN \
     --code-version $COMMIT_REF \
-    --url-prefix 'https://app.rollbar.com/' \
+    --url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/' \
     --next"
   publish = "out"
