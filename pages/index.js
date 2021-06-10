@@ -10,6 +10,9 @@ const rollbarSingleton = new Rollbar({
         code_version: process.env.NEXT_PUBLIC_SHA,
       }
     },
+    server: {
+      root: 'webpack://_N_E/./',
+    },
   },
   captureUncaught: true,
   captureUnhandledRejections: true,
