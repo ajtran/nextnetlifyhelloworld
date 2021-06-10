@@ -1,8 +1,7 @@
 [build]
   command = "echo NEXT_PUBLIC_SHA=$COMMIT_REF >> .env.local && \
   yarn next build && yarn next export && \
-  npm install -g rollbar-cli && \
-  rollbar-cli upload-sourcemaps ./out \
+  npx rollbar-cli upload-sourcemaps ./out \
     --access-token $ROLLBAR_SERVER_ACCESS_TOKEN \
     --code-version $COMMIT_REF \
     --url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/' \
