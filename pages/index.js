@@ -19,7 +19,6 @@ const rollbarSingleton = new Rollbar({
 })
 
 function throwError() {
-  rollbarSingleton.log('clicked')
   try {
     const tomato = its.a.new.error.split()
   } catch (e) {
