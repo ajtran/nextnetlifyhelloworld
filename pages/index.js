@@ -21,7 +21,7 @@ const rollbarSingleton = new Rollbar({
 function throwError() {
   rollbarSingleton.log('clicked')
   try {
-    const tomato = banana.split()
+    const tomato = its.a.new.error.split()
   } catch (e) {
     rollbarSingleton.error(e)
   }
