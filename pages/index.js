@@ -34,7 +34,7 @@ export default function IndexPage() {
         index page
       </h1>
       <div onClick={throwError}>
-        click me for an error
+        click me for an errorrrrr
       </div>
     </div>
   )

@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -32,7 +32,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+
       - name: Netlify Deploy
         # You may pin to the exact commit or the version.
         # uses: jsmrcaga/action-netlify-deploy@a7332308c8cc7bae34597941cd9c8a55596217ce
