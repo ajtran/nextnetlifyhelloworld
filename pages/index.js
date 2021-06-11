@@ -30,7 +30,7 @@ export default function IndexPage() {
   return (
     <div>
       <h1>
-        index page {process.env.NEXT_PUBLIC_ROLLBAR_ENVIRONMENT}
+        index page {process.env.NEXT_PUBLIC_SHA}
       </h1>
       <div onClick={throwError}>
         click me for an errorrrrr
