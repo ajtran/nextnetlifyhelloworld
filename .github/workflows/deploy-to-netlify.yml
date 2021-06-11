@@ -32,6 +32,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo NEXT_PUBLIC_ROLLBAR_ENVIRONMENT=production >> .env.local
 
       - name: Netlify Deploy
         # You may pin to the exact commit or the version.

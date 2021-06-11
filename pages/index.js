@@ -19,7 +19,6 @@ const rollbarSingleton = new Rollbar({
 })
 
 function throwError() {
-  rollbarSingleton.log('clicked')
   try {
     const tomato = its.a.new.error.split()
   } catch (e) {
@@ -31,7 +30,7 @@ export default function IndexPage() {
   return (
     <div>
       <h1>
-        index page {secrets.MY_TOKEN_SECRET}
+        index page {process.env.NEXT_PUBLIC_ROLLBAR_ENVIRONMENT}
       </h1>
       <div onClick={throwError}>
         click me for an errorrrrr
