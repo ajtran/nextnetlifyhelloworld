@@ -31,7 +31,7 @@ export default function IndexPage() {
   return (
     <div>
       <h1>
-        index page
+        index page `${process.env.NEXT_PUBLIC_ROLLBAR_ENVIRONMENT}`
       </h1>
       <div onClick={throwError}>
         click me for an errorrrrr
