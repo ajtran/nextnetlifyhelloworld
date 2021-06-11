@@ -33,7 +33,7 @@ jobs:
           echo NEXT_PUBLIC_SHA=$GITHUB_SHA >> .env.local
 
       - name: Build website
-        run: yarn next build
+        run: yarn build
 
       - name: Upload sourcemaps to Rollbar
         run: npx rollbar-cli upload-sourcemaps ./out --access-token ${{ secrets.ROLLBAR_SERVER_ACCESS_TOKEN }} --code-version $GITHUB_SHA --url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/' --next
