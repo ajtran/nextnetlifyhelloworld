@@ -34,4 +34,4 @@ jobs:
           yarn next build && yarn next export
 
       - name: Upload sourcemaps to Rollbar
-        run: npx rollbar-cli upload-sourcemaps ./out --access-token ${{ secrets.ROLLBAR_SERVER_ACCESS_TOKEN }} --code-version $GITHUB_SHA --url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/'
+        run: npx rollbar-cli upload-sourcemaps ./out/_next/static/chunks/pages --access-token ${{ secrets.ROLLBAR_SERVER_ACCESS_TOKEN }} --code-version $GITHUB_SHA --url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/_next/static/chunks/pages/' --next
