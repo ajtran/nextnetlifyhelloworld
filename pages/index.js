@@ -20,7 +20,7 @@ const rollbarSingleton = new Rollbar({
 
 function throwError() {
   try {
-    const tomato = its.a.new.error.split()
+    const tomato = this.is.a.complelety.new.error
   } catch (e) {
     rollbarSingleton.error(e)
   }
