@@ -32,10 +32,6 @@ jobs:
         run: |
           echo NEXT_PUBLIC_SHA=$GITHUB_SHA >> .env.local
 
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 10
-
       - name: Install, build, and export
         run: |
           yarn install
