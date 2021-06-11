@@ -32,8 +32,7 @@ jobs:
         run: |
           echo NEXT_PUBLIC_SHA=$GITHUB_SHA >> .env.local
 
-      - name: Use setup-node@v1
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: 10
 
