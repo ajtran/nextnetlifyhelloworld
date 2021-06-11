@@ -28,10 +28,6 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: Add NEXT_PUBLIC_SHA to .env.local
-        run: |
-          echo NEXT_PUBLIC_SHA=$GITHUB_SHA >> .env.local
-
       - name: Install, build, and export
         run: |
           yarn install
