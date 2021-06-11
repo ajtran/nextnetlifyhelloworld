@@ -37,9 +37,9 @@ jobs:
           with:
             node-version: 10
 
-        run: |
-          yarn install
-          yarn build
+          run: |
+            yarn install
+            yarn build
 
       - name: Upload sourcemaps to Rollbar
         run: npx rollbar-cli upload-sourcemaps ./out --access-token ${{ secrets.ROLLBAR_SERVER_ACCESS_TOKEN }} --code-version $GITHUB_SHA --url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/' --next
