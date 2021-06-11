@@ -28,4 +28,4 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 ## TODO
 
-Add continuous development with Netlify
+Figure out why there are two different versions of `index-***` and why the source maps we upload don't cover it whereas when we run the command locally, the export returns the same `index-***` twice.
