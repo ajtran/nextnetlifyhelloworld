@@ -1,3 +1,3 @@
 [build]
-  command = "echo NEXT_PUBLIC_SHA=$COMMIT_REF >> .env.local && yarn next build && yarn next export"
+  command = "echo NEXT_PUBLIC_SHA=$COMMIT_REF >> .env.local && yarn next build && yarn next export && npx rollbar-cli@0.1.0 upload-sourcemaps ./out/_next/static/chunks/pages --access-token $ROLLBAR_SERVER_ACCESS_TOKEN --code-version $COMMIT_REF --url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/_next/static/chunks/pages/' --next"
   publish = "out"
