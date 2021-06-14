@@ -33,5 +33,8 @@ jobs:
           yarn install
           yarn next build && yarn next export
 
+      - name: Show me dem files
+        run: ls ./out/_next/static/chunks/pages/
+
       - name: Upload sourcemaps to Rollbar
         run: npx rollbar-cli@0.1.0 upload-sourcemaps ./out/_next/static/chunks/pages --access-token ${{ secrets.ROLLBAR_SERVER_ACCESS_TOKEN }} --code-version $GITHUB_SHA --url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/_next/static/chunks/pages/' --next
