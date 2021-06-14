@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy:netlify": "next build && next export"
+    "deploy:netlify": "sh ./build.sh"
   },
   "dependencies": {
     "next": "latest",
