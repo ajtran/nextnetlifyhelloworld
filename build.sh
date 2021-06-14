@@ -8,5 +8,5 @@ echo "upload sourcemaps to rollbar"
 npx rollbar-cli@0.1.0 upload-sourcemaps ./out \
 --access-token $ROLLBAR_SERVER_ACCESS_TOKEN \
 --code-version $COMMIT_REF \
---url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/_next/static/chunks/pages/' \
+--url-prefix 'https://nostalgic-leavitt-673da8.netlify.app/' \
 --next
