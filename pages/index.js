@@ -20,7 +20,7 @@ const rollbarSingleton = new Rollbar({
 
 function throwError() {
   try {
-    const tomato = x + this.b.a
+    const tomato = x / new.error.where.we.going
   } catch (e) {
     rollbarSingleton.error(e)
   }
