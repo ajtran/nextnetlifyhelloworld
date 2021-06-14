@@ -4,13 +4,15 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "netlify/deploy": "next build && next out"
   },
   "dependencies": {
     "next": "latest",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "rollbar": "^2.22.0"
+    "rollbar": "^2.22.0",
+    "rollbar-cli": "^0.1.0"
   },
   "license": "MIT"
 }
